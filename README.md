@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/RoughneckCoder/CosineFusion) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/RoughneckCoder/CosineFusion/blob/main/LICENSE) [![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/) [![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://isocpp.org/)
 
-## Overvieww
+## Overview
 **CosineFusion** is a hardware-accelerated, high-performance cosine similarity engine that seamlessly bridges C++17 and Python using **pybind11**. By executing intense linear algebra routines directly on compiled binaries, CosineFusion bypasses the Python interpreter's performance bottlenecks, delivering bare-metal speed for matrix matching, AI embeddings, and content recommendation pipelines.
 
 ---
