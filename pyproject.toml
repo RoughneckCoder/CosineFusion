@@ -1,3 +1,22 @@
 [build-system]
-requires = ["setuptools", "pybind11"]
+requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "cosinefusion"
+version = "0.1.0"
+description = "A high-performance C++ accelerated vector score fusion engine."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Programming Language :: C++",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+dependencies = [
+	"numpy>=1.24.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

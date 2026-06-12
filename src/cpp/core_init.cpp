@@ -69,8 +69,8 @@ py::dict cosine_similarity(py::array_t<double> A, py::array_t<double> B) {
 }
 
 
-PYBIND11_MODULE(core_init, m) {
-    m.doc() = "C++ cosine similarity exposed to Python via pybind11";
+PYBIND11_MODULE(core_backend, m) {
+    m.doc() = "C++ cosine similarity exposed to Python via pybind11 as core_backend";
     m.def("cosine_similarity", &cosine_similarity, "Compute cosine similarity",
           py::arg("A"), py::arg("B"));
 }

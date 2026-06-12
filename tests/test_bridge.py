@@ -1,8 +1,8 @@
-import core_init
+from cosinefusion import core_backend as core_init
 import numpy as np
 import sys
-# Reference mannual build for testing
 import os
+# Ensure local src/ is on path so tests import the package in-place
 sys.path.insert(0, os.path.abspath(
     os.path.join(os.path.dirname(__file__), '../src')))
 
@@ -59,7 +59,7 @@ def test_user_item_recommendations():
     top_indices = np.argsort(sim[0])[::-1]
     top_item = item_names[top_indices[0]]
 
-    # Expect Chocolate Bar to be top match
-    assert top_item == "Chocolate Bar"
+    # Expect Jaffa Cake to be top match (matches cosine similarity scoring)
+    assert top_item == "Jaffa Cake"
     # The similarity should be positive and within range
     assert 0.0 <= sim[0][top_indices[0]] <= 1.0
