@@ -1,0 +1,13 @@
+{
+    "dataset": "BeIR/scifact",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "top_k": 10,
+    "document_count": 5183,
+    "query_count": 300,
+    "baseline_cosine": {
+        "recall@10": 0.7833333333333333,
+        "mrr@10": 0.6047248677248678,
+        "ndcg@10": 0.6450816521455776,
+        "mean_latency_ms": 0.2693884862431635
+    }
+}

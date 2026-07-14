@@ -133,6 +133,22 @@ CosineFusion/
 
 ```
 
+## Benchmark
+
+CosineFusion includes a reproducible benchmark harness using the BEIR SciFact dataset.
+
+Current cosine similarity baseline:
+
+| Metric | Score |
+|---------|------:|
+| Recall@10 | 0.7833 |
+| MRR@10 | 0.6047 |
+| nDCG@10 | 0.6451 |
+| Mean Retrieval Latency | 0.269 ms |
+
+Benchmark code is available in `benchmarks/`.
+
+
 ---
 
 ## 📄 License
