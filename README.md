@@ -133,7 +133,7 @@ CosineFusion/
 
 ```
 
-## Benchmark
+## 📊 Benchmark
 
 CosineFusion includes a reproducible benchmark harness using the BEIR SciFact dataset. The current baseline uses standard cosine similarity retrieval with the `all-MiniLM-L6-v2` embedding model.
 
