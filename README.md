@@ -135,19 +135,18 @@ CosineFusion/
 
 ## Benchmark
 
-CosineFusion includes a reproducible benchmark harness using the BEIR SciFact dataset.
+CosineFusion includes a reproducible benchmark harness using the BEIR SciFact dataset. The current baseline uses standard cosine similarity retrieval with the `all-MiniLM-L6-v2` embedding model.
 
-Current cosine similarity baseline:
+| Metric | Baseline | What it measures |
+|---------|---------:|------------------|
+| Recall@10 | **0.7833** | ~78% of relevant documents are retrieved within the top 10 results. |
+| nDCG@10 | **0.6451** | Measures how well the most relevant documents are ranked near the top. |
+| MRR@10 | **0.6047** | Indicates how quickly the first relevant document appears in the ranking. |
+| Mean Retrieval Latency | **0.269 ms** | Average retrieval time per query (excluding embedding generation). |
 
-| Metric | Score |
-|---------|------:|
-| Recall@10 | 0.7833 |
-| MRR@10 | 0.6047 |
-| nDCG@10 | 0.6451 |
-| Mean Retrieval Latency | 0.269 ms |
+The benchmark harness is available in `benchmarks/` and can be reproduced locally using the BEIR SciFact dataset.
 
-Benchmark code is available in `benchmarks/`.
-
+Future releases will compare CosineFusion directly against this baseline to quantify retrieval quality improvements.
 
 ---
 
