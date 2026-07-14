@@ -118,18 +118,29 @@ python -m pytest -v
 
 ```text
 CosineFusion/
- ├── src/
- │    ├── cpp/
- │    │    └── core_init.cpp     # High-performance C++ core engine
- │    └── python/
- │         └── core_demo.py     # Functional verification demo
- ├── tests/
- │    └── test_bridge.py        # Automated PyTest matrix suite
- ├── setup.py                   # Pybind11 / Universal2 compilation configuration
- ├── pyproject.toml             # Standard modern build-system requirements
- ├── README.md                  # Project documentation
- ├── LICENSE                    # MIT License open-source file
- └── requirements.txt           # Environment dependencies
+├── src/
+│   ├── cpp/
+│   │   └── core_init.cpp          # High-performance C++ cosine similarity engine
+│   └── python/
+│       ├── __init__.py            # Python package entry point
+│       └── core_demo.py           # Functional verification and usage examples
+│
+├── benchmarks/
+│   ├── benchmark_beir.py          # BEIR benchmark runner
+│   ├── data_sets.py               # Dataset loading utilities
+│   ├── metrics.py                 # Retrieval evaluation metrics
+│   └── results/
+│       └── scifact.json           # Latest benchmark results
+│
+├── tests/
+│   └── test_bridge.py             # Automated PyTest suite
+│
+├── setup.py                       # Pybind11 extension build configuration
+├── pyproject.toml                 # Modern Python build configuration
+├── requirements.txt               # Development dependencies
+├── README.md                      # Project documentation
+├── LICENSE                        # MIT License
+└── .gitignore                     # Git ignore rules
 
 ```
 
